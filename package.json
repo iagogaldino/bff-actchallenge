@@ -1,0 +1,11 @@
+{
+    "name": "appiago",
+    "scripts": {
+      "start": "node app.js",
+      "postinstall": "ng build --aot --prod"
+    },
+    "engines": {
+      "node": "10.13.0",
+      "npm": "6.4.1"
+    }
+   }
