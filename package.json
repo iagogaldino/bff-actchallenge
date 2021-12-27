@@ -1,5 +1,5 @@
 {
-  "name": "appiago",
+  "name": "bff-act-challenge",
   "scripts": {
     "start": "node app.js"
   },
