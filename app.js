@@ -3,7 +3,8 @@
 // Your private key:  fbf255068eccea6d0ef951b9f25626b57ab2fe72
 const express = require('express');
 const path = require('path');
-const nomeApp = process.env.npm_package_name;
+var pjson = require('./package.json');
+const nomeApp = process.env.npm_packag_name;
 const app = express();
 
 app.use(express.static(`${__dirname}/public/`));
@@ -13,4 +14,4 @@ app.get('/*', (req, res) => {
 });
 
 app.listen(process.env.PORT || 8080);
-console.log(`server started`);
+console.log(`${pjson.name} server started`);
